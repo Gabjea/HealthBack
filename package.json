@@ -4,7 +4,8 @@
   "description": "HealthBack",
   "main": "index.js",
   "scripts": {
-    "devServer": "nodemon server/index.js"
+    "devServer": "nodemon server/index.js",
+    "sequelize": "sequelize --options-path=./.sequelizerc"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,14 @@
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "mysql2": "^2.3.0",
     "nodemon": "^2.0.13",
-    "passport": "^0.5.0",
+    "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
+    "pg": "^8.7.1",
     "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.0.0"
   }
 }
